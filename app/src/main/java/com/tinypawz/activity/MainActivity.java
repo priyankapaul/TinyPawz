@@ -1,5 +1,6 @@
 package com.tinypawz.activity;
 
+import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private DogCategoryAdapter mAdapter;
     private ArrayList<DogCategoryModel> movieList = new ArrayList<>();
     DogCategoryModel dogCategoryModel;
+    private NavigationView mNavigationView;
 
 
     @Override
@@ -35,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         categoryRecyclerView.setLayoutManager(mLayoutManager);
         categoryRecyclerView.setItemAnimator(new DefaultItemAnimator());
         categoryRecyclerView.setAdapter(mAdapter);
-       // mAdapter.notifyDataSetChanged();
     }
 
     private void prepareData() {
@@ -50,8 +51,5 @@ public class MainActivity extends AppCompatActivity {
 
         dogCategoryModel = new DogCategoryModel("Dog Supplies", "description", "http://runsickcattle.com/data/out/68/703565.gif");
         movieList.add(dogCategoryModel);
-
-
-
     }
 }
