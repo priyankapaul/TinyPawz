@@ -1,12 +1,13 @@
 package com.tinypawz.model;
 
 public class DogCategoryModel {
-    private String dogName, dogDescription, dogImgUrl;
+    private String dogName, dogDescription;
+    private int dogImgUrl;
 
     public DogCategoryModel() {
     }
 
-    public DogCategoryModel(String dogName, String dogDescription, String dogImgUrl) {
+    public DogCategoryModel(String dogName, String dogDescription, int dogImgUrl) {
         this.dogName = dogName;
         this.dogDescription = dogDescription;
         this.dogImgUrl = dogImgUrl;
@@ -28,11 +29,11 @@ public class DogCategoryModel {
         this.dogDescription = dogDescription;
     }
 
-    public String getDogImgUrl() {
+    public int getDogImgUrl() {
         return dogImgUrl;
     }
 
-    public void setDogImgUrl(String dogImgUrl) {
+    public void setDogImgUrl(int dogImgUrl) {
         this.dogImgUrl = dogImgUrl;
     }
 

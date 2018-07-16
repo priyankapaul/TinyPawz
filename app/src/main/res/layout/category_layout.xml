@@ -2,29 +2,44 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-    <TextView
-        android:id="@+id/tvDogName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="title"
-        android:textSize="16dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tvDogDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvDogName"
-        android:text="subtitle"
-        android:visibility="gone" />
-
-
-    <com.android.volley.toolbox.NetworkImageView
+    <ImageView
         android:id="@+id/nivDogImg"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </com.android.volley.toolbox.NetworkImageView>
+        android:layout_height="250dp"
+        android:src="@drawable/cute_puppy"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/tvDogName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="title"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDogDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDogName"
+            android:text="subtitle"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+
+
 
 </FrameLayout>
